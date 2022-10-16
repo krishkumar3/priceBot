@@ -1,0 +1,7 @@
+worker_1: export PYTHONWARNINGS="ignore:Unverified HTTPS request";python3 ./priceBot_bn.py;
+
+worker_2: export PYTHONWARNINGS="ignore:Unverified HTTPS request";python3 ./priceBot_n.py;
+
+worker_3: export PYTHONWARNINGS="ignore:Unverified HTTPS request";sleep 30;python3 ./priceBot_sgx.py;
+
+worker_4: export PYTHONWARNINGS="ignore:Unverified HTTPS request";sleep 30;python3 ./priceBot_usdinr.py;
